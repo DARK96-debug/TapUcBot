@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UC chiqarish</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <button onclick="window.location.href='index.html'">Uy</button>
+    <button onclick="window.location.href='coin.html'">Tanga</button>
+    <button onclick="window.location.href='balance.html'">Balans</button>
+    <button onclick="window.location.href='zaryat.html'">Zaryat</button>
+    <button onclick="window.location.href='referal.html'">Referal</button>
+    <button onclick="window.location.href='mission.html'">Missiya</button>
+  </div>
+
+  <div class="withdraw">
+    <h2>UC chiqarish</h2>
+    <p>Minimum 120 UC chiqarilishi mumkin.</p>
+    <input type="number" placeholder="Miqdor" id="amount">
+    <input type="text" placeholder="PUBG ID" id="pubg_id">
+    <button onclick="submitRequest()">Sorov yuborish</button>
+  </div>
+
+  <script>
+    function submitRequest() {
+      const amount = document.getElementById('amount').value;
+      const pubgId = document.getElementById('pubg_id').value;
+      alert(`Sorov yuborildi! Miqdor: ${amount} UC, PUBG ID: ${pubgId}`);
+    }
+  </script>
+</body>
+</html>
