@@ -1,0 +1,107 @@
+/* Umumiy stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar dizayni */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar button {
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #555;
+}
+
+/* Sahifa markazida joylashgan kontent */
+.home, .coin, .balance, .zaryat, .referal, .mission, .withdraw {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sahifa sarlavhasi */
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Tanga rasmi uchun stil */
+.coin img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.coin img:hover {
+  transform: scale(1.1);
+}
+
+/* Balans ko‘rinishi */
+#balance {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Missiya tugmasi */
+.mission button, .withdraw button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.mission button:hover, .withdraw button:hover {
+  background-color: #218838;
+}
+
+/* Input maydonlari */
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Umumiy butun sahifa uchun shakl */
+button:focus {
+  outline: none;
+}
