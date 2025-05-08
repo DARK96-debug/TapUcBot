@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <button onclick="window.location.href='index.html'">Uy</button>
+    <button onclick="window.location.href='balance.html'">Balans</button>
+    <button onclick="window.location.href='zaryat.html'">Zaryat</button>
+    <button onclick="window.location.href='referal.html'">Referal</button>
+    <button onclick="window.location.href='mission.html'">Missiya</button>
+    <button onclick="window.location.href='withdraw.html'">UC chiqarish</button>
+  </div>
+
+  <div class="coin">
+    <h2>Tanga Rasmiga Bosganingizda Balansga UC Qo'shiladi</h2>
+    <img src="https://postimg.cc/TK11zmFx" alt="Tanga" onclick="addBalance()">
+    <p id="balance">Balans: 0.0000 UC</p>
+  </div>
+
+  <script>
+    function addBalance() {
+      const balanceElement = document.getElementById('balance');
+      let currentBalance = parseFloat(balanceElement.textContent.split(': ')[1]);
+      currentBalance += 0.0001;
+      balanceElement.textContent = `Balans: ${currentBalance.toFixed(4)} UC`;
+    }
+  </script>
+</body>
+</html>
