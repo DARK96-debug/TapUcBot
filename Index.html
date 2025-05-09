@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>XV Coin | Uy</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function addBalance() {
+      let current = parseFloat(localStorage.getItem("balance")) || 0;
+      current += 0.0001;
+      localStorage.setItem("balance", current.toFixed(4));
+      document.getElementById("balance").innerText = "Balans: " + current.toFixed(4) + " UC";
+    }
+
+    window.onload = function () {
+      let current = parseFloat(localStorage.getItem("balance")) || 0;
+      document.getElementById("balance").innerText = "Balans: " + current.toFixed(4) + " UC";
+    }
+  </script>
+</head>
+<body>
+  <div class="home">
+    <div id="balance" class="balance-text">Balans: 0.0000 UC</div>
+    <div class="coin-wrapper">
+      <img src="https://i.postimg.cc/TK11zmFx/coin.png" onclick="addBalance()" alt="Tanga" class="coin-img">
+    </div>
+    <div class="zaryat-text">Zaryat: 100%</div>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Uy</a>
+    <a href="missiya.html">Missiyalar</a>
+    <a href="referal.html">Referal</a>
+    <a href="uc.html">UC chiqarish</a>
+  </div>
+</body>
+</html>
